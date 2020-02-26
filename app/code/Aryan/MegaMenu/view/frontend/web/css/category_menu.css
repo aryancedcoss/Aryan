@@ -1,0 +1,62 @@
+/*=================================
+=            MEGA MENU            =
+=================================*/
+.category_title {
+	font-size: 18px;
+	color: #fff;
+}
+.mega_dropdown,
+.page-wrapper .navigation .level0.parent > .level-top > .ui-menu-icon::after 
+{
+	display: none;
+}
+.page-wrapper .nav-sections-item-content {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+.ced.navigation {
+	width: 200px;
+	margin: 0;
+	padding: 10px 20px;
+	cursor: pointer;
+	position: relative;
+	background: #1c6fa0;
+}
+.ced.navigation.show .mega_dropdown {
+	display: block;
+	position: absolute;
+	z-index: 99;
+	background: #fff;
+	box-shadow: 0 1px 5px -1px rgba(0,0,0,.2);
+	top: 100%;
+	left: 0;
+	right: 0;
+}
+.page-wrapper .nav-sections 
+{
+	background: #52a5d6;
+}
+.mega_dropdown ul > li.level0 {
+	width: 100%;
+	margin-right: 0;
+}
+.level0.submenu.ui-menu.ui-widget {
+	top: 0 !important;
+	left: 105% !important;
+	box-shadow: 0 1px 5px -1px rgba(0,0,0,.2) !important;
+	border: 0 !important;
+	min-width: 150px !important;
+}
+.mega_dropdown .ui-menu .level0 .level-top {
+	width: 100%;
+}
+.mega_dropdown .category-item.parent .ui-menu-icon::before {
+	content: '\f054';
+	font-family: 'Font Awesome 5 Free';
+	display: block;
+}
+.mega_dropdown ul {
+	padding: 0;
+}
+
+/*=====  End of MEGA MENU  ======*/

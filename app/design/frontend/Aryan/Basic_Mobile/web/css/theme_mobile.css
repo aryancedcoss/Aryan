@@ -1,0 +1,121 @@
+/*====================================
+=            SECTION RULE            =
+====================================*/
+.section.welcome .section_inner, 
+.setups .section_inner,
+.gelpads .section_inner,
+.quote .section_inner,
+.copyright_inner,
+.footer_wrapper,
+.page-header .header_bottom,
+.header_top_wrapper .header_top
+{
+	flex-direction: column;
+	max-width: 100%;
+	padding: 15px;
+}
+.section.welcome .section_img, 
+.section.gelpads .section_img
+{
+	display: none;
+}
+h2.section_heading {
+	font-size: 24px;
+}
+.setups .section_para {
+	padding: 0 15px;
+}
+.section_para {
+	font-size: 13px;
+}
+.setups .section_content
+{
+	flex-direction: column;
+}
+.setups .section_content .content_box {
+	margin: 0 0 20px 0;
+	box-shadow: 0px 0 2px 0 rgba(0,0,0,0.3);
+}
+.page-wrapper .section.quote,
+.page-wrapper .section.gelpads,
+.page-wrapper .section.welcome,
+.page-wrapper .section.setups
+{
+	padding: 20px 0;
+}
+/*=====  End of SECTION RULE  ======*/
+/*==============================
+=            HEADER            =
+==============================*/
+.page-wrapper .page-header,
+.header_search_wrapper .field.search .control,
+.header_search_wrapper .block.block-search
+{
+	margin: 0;
+}
+.header_search .field.search {
+	display: flex;
+	align-items: center;
+}
+.page-wrapper .header_search .block.block-search, 
+.header_bottom div:first-child
+{
+	width: 100%;
+}
+.header_search .control input {
+	position: static;
+	padding: 0;
+	margin: 0;
+}
+.header_logo
+{
+	padding: 5px 0; 
+}
+.header_top_wrapper .header_top
+{
+	padding: 5px 0;
+}
+.page-wrapper .page-header .header_bottom
+{
+	padding: 5px 15px;
+	display: none;
+}
+/*=====  End of HEADER  ======*/
+
+/*======================================
+=            BANNER SECTION            =
+======================================*/
+.section.banner .item img 
+{
+	height: 200px;
+}
+.section.banner .owl-theme .owl-nav
+{
+	display: none;
+}
+/*=====  End of BANNER SECTION  ======*/
+/*==============================
+=            FOOTER            =
+==============================*/
+.page-wrapper .footer_wrapper .footer_inner
+{
+	margin: 0 0 20px 0;
+}
+.page-wrapper .page-footer {
+	margin: 0;
+	padding: 0;
+}
+/*=====  End of FOOTER  ======*/
+
+/*=====================================
+=            COPYRIGHT                =
+=====================================*/
+.copyright .credit {
+	justify-content: center;
+	margin-top: 15px;
+}
+.page-wrapper .copyright
+{
+	padding: 0;
+}
+/*=====  End of COPYRIGHT  ======*/

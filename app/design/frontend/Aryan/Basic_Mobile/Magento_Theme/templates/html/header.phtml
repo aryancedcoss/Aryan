@@ -1,0 +1,35 @@
+<!--================================
+=            HEADER TOP            =
+=================================-->
+<div class="header_top_wrapper">
+    <div class="header_top">
+        <div class="header_logo">
+			<?php echo $this->getLayout()->createBlock("Magento\Theme\Block\Html\Header\Logo")->setTemplate("Magento_Theme::html/header/logo.phtml")->toHtml(); ?>
+		</div>
+    </div>
+</div>
+<!--===================================
+=            HEADER SEARCH            =
+====================================-->
+<div class="header_search_wrapper">
+	<div class="header_bottom">
+		<div class="header_search">
+			<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Magento_Search::form.mini.phtml")->toHtml();
+            ?>
+		</div>
+	</div>
+</div>
+<!-- <script type="text/javascript">
+	require(['jquery'], function ($) 
+	{	
+
+		$('.nav-toggle').on('click',function () 
+		{
+			$('.nav-sections').toggleClass('show');
+		});
+		$('.navigation').on('click',function () 
+		{
+			$('.navigation').toggleClass('show');
+		});
+	});		
+</script> -->

@@ -1,0 +1,41 @@
+<?php
+/**
+ * Top menu for store
+ *
+ * @var $block \Magento\Theme\Block\Html\Topmenu
+ */
+
+$columnsLimit = $block->getColumnsLimit() ?: 0;
+$_menuHtml = $block->getHtml('level-top', 'submenu', $columnsLimit)
+?>
+<nav class="ced navigation" data-action="navigation">
+	<span class="category_title">
+		<i class="fas fa-bars"></i> <?= __('Categories'); ?>
+	</span>
+	<div class="mega_dropdown">
+		<ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>
+			<?= /* @noEscape */ $_menuHtml?>
+			<?= $block->getChildHtml() ?>
+		</ul>
+	</div>
+</nav>
+<script type="text/javascript">
+	require(['jquery'], function ($) 
+	{	
+
+		$('.navigation').on('click',function () 
+		{
+			$('.navigation').toggleClass('show');
+		});
+		var menu_height = $('header').innerHeight();
+        $(window).scroll(function () 
+        {
+            var scroll = $(window).scrollTop();
+            if (scroll >= menu_height) {
+              $('.nav-sections').addClass('sticky');
+          } else {
+              $('.nav-sections').removeClass('sticky');
+          }
+        });
+	});		
+</script>

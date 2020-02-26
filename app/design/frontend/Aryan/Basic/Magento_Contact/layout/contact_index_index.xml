@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Get In Touch !</title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <container name="custom.container" htmlTag="div" htmlClass="section_inner contact_us">
+                <container name="login.container" htmlTag="div" htmlClass="login_container">
+                    <block class="Magento\Contact\Block\ContactForm" name="contactForm" template="Magento_Contact::form.phtml">
+                        <container name="form.additional.info" label="Form Additional Info"/>
+                    </block>
+                </container>
+            </container>
+        </referenceContainer>
+    <move element="page.main.title" destination="login.container" before="contactForm"/>
+    </body>
+</page>

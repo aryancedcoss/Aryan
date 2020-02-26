@@ -1,0 +1,57 @@
+<!--================================
+=            HEADER TOP            =
+=================================-->
+<div class="header_top_wrapper">
+    <div class="header_top">
+        <!-- address -->
+        <div class="top_inner">
+            <span class="address_link">
+            <i class="fas fa-map-marker-alt"></i>
+            <?= __('Lorem, Lucknow 226010'); ?>
+            </span>
+            <a href="tel:1234567890" class="links">
+            <i class="fas fa-phone-alt"></i>
+            <?= __('1234567890'); ?>
+            </a>
+        </div>
+        <!-- social links -->
+        <div class="top_inner header_social_links">
+            <a href="#" class="links facebook">
+            	<i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="links twitter">
+            	<i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="links linkedin">
+            	<i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="links gplus">
+            	<i class="fab fa-google-plus-g"></i>
+            </a>
+            <a href="#" class="links insta">
+            	<i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<!--===================================
+=            HEADER BOTTOM            =
+====================================-->
+<div class="header_bottom_wrapper">
+	<div class="header_bottom">
+		<div class="header_logo">
+			<?php echo $this->getLayout()->createBlock("Magento\Theme\Block\Html\Header\Logo")->setTemplate("Magento_Theme::html/header/logo.phtml")->toHtml(); ?>
+		</div>
+		<div class="header_search">
+			<?php echo $this->getLayout()->createBlock("Magento\Framework\View\Element\Template")->setTemplate("Magento_Search::form.mini.phtml")->toHtml(); ?>
+		</div>
+        <div class="header_minicart header_icon">
+        <?php echo $this->getChildHtml('minicart'); ?>
+        </div>
+        <div class="header_account">
+            <span class="header_icon">
+                <i class="far fa-user-circle"></i>
+            </span>
+        </div>
+	</div>
+</div>
