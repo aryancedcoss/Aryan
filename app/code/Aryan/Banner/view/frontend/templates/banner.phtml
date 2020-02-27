@@ -1,0 +1,33 @@
+<section class="section banner">
+	<div class="section_inner">
+		<div class="owl-carousel owl-theme basic_slider">
+			<div class="item">
+				<img src="<?php echo $this->getViewFileUrl('images/banner1.jpg'); ?>" alt="Banner">
+			</div>
+			<div class="item">
+				<img src="<?php echo $this->getViewFileUrl('images/banner2.jpg'); ?>" alt="Banner">
+			</div>
+			<div class="item">
+				<img src="<?php echo $this->getViewFileUrl('images/banner3.jpg'); ?>" alt="Banner">
+			</div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript">
+    require([
+        'jquery',
+        'owlcarouselslider'
+        ], function ($,owlcarouselslider) {
+            'use strict';
+                $(".basic_slider").owlCarousel({
+                autoPlay: 3000,
+                margin:5,
+                items : 5,
+                itemsDesktop : [1199,5],
+                itemsDesktopSmall : [979,5],
+                itemsTablet : [768,5],
+                navigation : true,
+                pagination : false
+          });
+    });
+</script>

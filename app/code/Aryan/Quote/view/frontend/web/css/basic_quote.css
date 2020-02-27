@@ -1,0 +1,29 @@
+/*=============================
+=            QUOTE            =
+=============================*/
+.section.quote {
+	background: #f8f9fb;
+	padding: 50px 0;
+}
+.quote .section_inner
+{
+	display: flex;
+	align-items: center;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.quote blockquote {
+	margin: 0;
+	position: relative;
+	padding-left: 15px;
+}
+.quote blockquote::before {
+	content: '';
+	display: block;
+	height: 100%;
+	width: 5px;
+	background: #00a3c8;
+	position: absolute;
+	left: 0;
+}
+/*=====  End of QUOTE  ======*/

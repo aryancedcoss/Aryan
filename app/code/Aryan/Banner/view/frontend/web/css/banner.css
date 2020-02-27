@@ -1,0 +1,89 @@
+/*==============================
+=            BANNER            =
+==============================*/
+.cms-index-index .page-main {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+.section.banner .item img {
+	height: 500px;
+}
+.section.banner .owl-dots {
+	position: absolute;
+	margin-top: 0 !important;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.section.banner .owl-dots .owl-dot {
+	box-shadow: none;
+}
+.section.banner .owl-dots .owl-dot span
+{
+	background: #1fc2e7;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #fff;
+	transition: .3s all linear;
+}
+.section.banner .owl-dots .owl-dot.active span
+{
+	background: #0082a7;
+	width: 20px;
+} 
+.section.banner .owl-theme .owl-dots .owl-dot:hover span
+{
+	background: #0082a7;
+}
+.section.banner .owl-theme .owl-nav
+{
+	margin-top: 0;
+}
+.section.banner .owl-prev,
+.section.banner .owl-next
+{
+	position: absolute;
+}
+.section.banner .owl-prev,
+.section.banner .owl-next
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	box-shadow: none;
+}
+.section.banner .owl-prev
+{
+	left: 15px;
+}
+.section.banner .owl-next
+{
+	right: 15px;
+}
+.section.banner .owl-prev span,
+.section.banner .owl-next span 
+{
+	font-size: 0;
+	box-shadow: none;
+	color: #ffffff;
+}
+.section.banner .owl-nav button span:hover {
+	color: #00a3c8;
+}
+.section.banner .owl-theme .owl-nav [class*="owl-"]:hover
+{
+	background: transparent;
+}
+.section.banner .owl-prev span::before {
+	content: "Prev";
+	font-size: 19px;
+	font-family: 'Font Awesome 5 Free';
+}
+.section.banner .owl-next span::before
+{
+	content: "Next";
+	font-size: 19px;
+	font-family: 'Font Awesome 5 Free';
+}
+/*=====  End of BANNER  ======*/

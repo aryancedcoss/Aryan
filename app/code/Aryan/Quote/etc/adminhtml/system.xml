@@ -1,0 +1,30 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system> 
+        <tab id="basic_quote" translate="label" sortOrder="250">
+            <label>Aryan Extension</label>
+        </tab>
+        <section id="sec_quote" translate="label" type="text" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>basic-seperator</class>
+            <label>Quote</label>
+            <tab>basic_quote</tab>
+            <resource>Basic_Quote::quote_config</resource>
+            <group id="quote_menu" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Quote Setting</label>
+                <field id="module_status" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Status</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Hi, You can enable or disable module here.</comment>
+                </field>
+                <field id="quote_text" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Quote Text</label>
+                    <comment>Hi, You can change your quote text here.</comment>
+                </field>
+                <field id="author" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Quote Author</label>
+                    <comment>Hi, You can change your quote AUTHOR here.</comment>
+                </field>
+            </group>      
+        </section>
+    </system>
+</config>

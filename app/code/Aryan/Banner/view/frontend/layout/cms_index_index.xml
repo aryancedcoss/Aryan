@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<css src="Aryan_Banner::css/owl.carousel.css" />
+		<css src="Aryan_Banner::css/owl.theme.default.css" />
+		<css src="Aryan_Banner::css/banner.css" />
+		
+		<link src="Aryan_Banner::js/owl.carousel.js" />
+	</head>
+	<body>
+		<referenceContainer name="content">
+			<block class="Magento\Framework\View\Element\Template" name="homepage.banner" template="Aryan_Banner::banner.phtml" before="homepage.welcome" />
+		</referenceContainer>
+	</body>
+</page>
