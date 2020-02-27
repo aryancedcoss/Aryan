@@ -4,7 +4,8 @@
 		<css src="Aryan_Banner::css/owl.carousel.css" />
 		<css src="Aryan_Banner::css/owl.theme.default.css" />
 		<css src="Aryan_Banner::css/banner.css" />
-		
+
+        <link src="Aryan_Banner::js/jquery.js" />
 		<link src="Aryan_Banner::js/owl.carousel.js" />
 	</head>
 	<body>

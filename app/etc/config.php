@@ -236,6 +236,7 @@ return [
         'Aryan_Banner' => 1,
         'Aryan_MegaMenu' => 1,
         'Aryan_Quote' => 1,
+        'Aryan_QuoteProduct' => 1,
         'Dotdigitalgroup_Email' => 1,
         'Dotdigitalgroup_Chat' => 1,
         'Klarna_Core' => 1,
@@ -246,6 +247,7 @@ return [
         'Temando_Shipping' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidation' => 1,
-        'Yotpo_Yotpo' => 1
+        'Yotpo_Yotpo' => 1,
+        'Zoho_Salesiq' => 1
     ]
 ];
