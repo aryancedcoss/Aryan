@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+<body>
+    <referenceContainer name="content">
+            <referenceBlock name="product.price.final" remove="true" />
+            <referenceBlock name="product.info.review" remove="true" />
+            <referenceBlock name="product.info.form.content" remove="true" />
+        <container name="custom.product.page" htmlTag="div" htmlClass="product_wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="custom.price" template="Aryan_QuoteProduct::price/askforprice.phtml" />
+            <!--<block class="Magento\Framework\View\Element\Template" name="social.share" template="Aryan_QuoteProduct::social_share/social_share.phtml" />-->
+        </container>
+    </referenceContainer>
+    <move element="page.main.title" destination="product.info.main" before="-"/>
+    <move element="product.info.media" destination="custom.product.page" before="product.info.main"/>
+    <move element="product.info.main" destination="custom.product.page" after="product.info.media"/>
+    <move element="product.info.details" destination="content" after="custom.product.page"/>
+    <move element="custom.price" destination="product.info.main" after="product.info.stock.sku"/>
+</body>
+</page>

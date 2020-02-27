@@ -1,0 +1,75 @@
+.quote_button .action.ask_price,
+.quote_price_wrapper .actions-secondary a.action::before,
+.ask_price_wrapper a
+{
+    transition: .3s all linear;
+}
+.page-wrapper .modes {
+    display: none;
+}
+.quote_price_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quote_button .action.ask_price,
+.ask_price_wrapper a
+{
+    background: #004861;
+    color: #fff;
+    text-shadow: 0 0 0;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.ask_price_wrapper a
+{
+    font-size: 20px;
+}
+.quote_button .action.ask_price:hover,
+.ask_price_wrapper a:hover
+{
+    background: #388e3c;
+}
+.page-wrapper .product-image-wrapper
+{
+    height: 180px;
+}
+.quote_price_wrapper .actions-secondary a.action:hover::before
+{
+    color: #388e3c !important;
+}
+.quote_price_wrapper .actions-secondary a.action::before
+{
+    font-size: 40px !important;
+}
+.catalog-category-view .page-title-wrapper {
+    text-align: center;
+}
+.catalog-category-view .page-title-wrapper h1
+{
+    margin-bottom: 10px;
+}
+.category_detail {
+    padding: 0 25%;
+}
+.product_wrapper {
+    display: flex;
+    align-items: center;
+}
+.product_wrapper > div:first-child {
+    margin-right: 20px;
+}
+.product_wrapper .product-social-links .product-addto-links {
+    text-align: left;
+}
+
+.product_wrapper .product.media .fotorama__stage img
+{
+    width: 100%;
+    height: 100%;
+}
+.header_minicart.header_icon
+{
+    display: none;
+}
